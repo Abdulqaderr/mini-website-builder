@@ -50,6 +50,9 @@ npm run dev
 
 5. Open http://localhost:3000 in your browser.
 
+
+
+
    
 
 Usage
@@ -70,12 +73,19 @@ Fullscreen Preview: Click “Preview Fullscreen” to view your page without the
 
 
 
+
+
+
 | Section      | Editable Fields                                           |
 | ------------ | --------------------------------------------------------- |
 | **Hero**     | Title, Subtitle, Background Image URL                     |
 | **Features** | Title, List of Features (each with title and description) |
 | **CTA**      | Title, Description, Button Text                           |
 | **Footer**   | Text                                                      |
+
+
+
+
 
 
 
