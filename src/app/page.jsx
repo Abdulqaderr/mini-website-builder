@@ -4,15 +4,15 @@ import toast, { Toaster } from "react-hot-toast";
 import Swal from "sweetalert2";
 import { nanoid } from "nanoid";
 
-import Header from "../../components/Builder/Header";
-import Sidebar from "../../components/Builder/Sidebar";
-import Preview from "../../components/Builder/Preview";
-import EditModal from "../../components/Builder/EditModal";
+import Header from "./components/Builder/Header";
+import Sidebar from "./components/Builder/Sidebar";
+import Preview from "./components/Builder/Preview";
+import EditModal from "./components/Builder/EditModal";
 
-import CTA from "../../components/sections/CTA";
-import Features from "../../components/sections/Features";
-import Hero from "../../components/sections/Hero";
-import Footer from "../../components/sections/Footer";
+import CTA from "./components/sections/CTA";
+import Features from "./components/sections/Features";
+import Hero from "./components/sections/Hero";
+import Footer from "./components/sections/Footer";
 
 const PREMADE = {
   hero: {

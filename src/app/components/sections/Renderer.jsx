@@ -1,4 +1,3 @@
-// src/components/Renderer.jsx
 export default function Renderer({ props }) {
   if (!props) return <div>No props received</div>;
 

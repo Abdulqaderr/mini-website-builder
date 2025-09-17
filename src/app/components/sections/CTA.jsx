@@ -1,4 +1,3 @@
-// src/components/sections/CTA.jsx
 import React from "react";
 
 export default function CTA({ title = "", desc = "", btnText = "Action" }) {

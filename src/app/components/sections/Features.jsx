@@ -1,4 +1,3 @@
-// src/components/sections/Features.jsx
 import React from "react";
 
 export default function Features({ title = "", items = [] }) {
