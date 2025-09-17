@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Builder
 
-## Getting Started
+A **drag-and-drop page builder** built with React and Next.js that allows users to dynamically add, edit, reorder, and preview pre-made sections like Hero, Features, CTA, and Footer. Users can also export/import layouts as JSON.
 
-First, run the development server:
+---
 
-```bash
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Pre-made Sections](#pre-made-sections)
+- [Editing Sections](#editing-sections)
+- [Export / Import Layout](#export--import-layout)
+- [Full-Screen Preview](#full-screen-preview)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+
+- Drag and drop sections to reorder the layout
+- Add pre-made sections: Hero, Features, CTA, Footer
+- Live preview of all sections
+- Edit section content (title, subtitle, description, button text, images, etc.)
+- Export layout as JSON
+- Import layout from JSON
+- Fullscreen preview mode for reviewing the page
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/yourusername/mini-builder.git
+
+2. Navigate into the project folder:
+
+cd mini-builder
+
+3. Install dependencies:
+
+npm install
+
+4. Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add Sections: Use the sidebar to add Hero, Features, CTA, or Footer sections.
 
-## Learn More
+Reorder Sections: Drag and drop sections in the sidebar to rearrange.
 
-To learn more about Next.js, take a look at the following resources:
+Edit Sections: Click the “Edit” button next to a section to update its content.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Delete Sections: Click the “Delete” button to remove a section.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Export Layout: Click “Export” to download the current layout as JSON.
 
-## Deploy on Vercel
+Import Layout: Click “Import” and select a JSON file to load a saved layout.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Fullscreen Preview: Click “Preview Fullscreen” to view your page without the sidebar.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Section      | Editable Fields                                           |
+| ------------ | --------------------------------------------------------- |
+| **Hero**     | Title, Subtitle, Background Image URL                     |
+| **Features** | Title, List of Features (each with title and description) |
+| **CTA**      | Title, Description, Button Text                           |
+| **Footer**   | Text                                                      |
+
+Editing Sections
+
+---
+
+Click Edit on the desired section.
+
+Modify the fields in the modal that appears.
+
+Click Save to update the section or Cancel to discard changes.
+
+Export / Import Layout
+
+---
+
+Export: Downloads a JSON file containing your current layout.
+
+Import: Upload a JSON file to restore a saved layout.
+
+Layouts are stored in localStorage, so your changes persist on the same browser.
+
+Full-Screen Preview
+
+---
+
+Click Preview Fullscreen to hide the sidebar and see your page in full width.
+
+Click Exit Fullscreen to return to the editor.
