@@ -1,15 +1,20 @@
-export default function Hero({ props }) {
+// src/components/sections/Hero.jsx
+import React from "react";
+
+export default function Hero({ title = "", subtitle = "", bg = "" }) {
   return (
-    <section className="bg-indigo-500 text-white p-12 text-center rounded-xl">
-      <h1 className="text-4xl font-bold mb-4">{props.title}</h1>
-      <p className="text-lg">{props.subtitle}</p>
-      {props.bg && (
-        <img
-          src={props.bg}
-          alt="Hero background"
-          className="mt-6 rounded-lg mx-auto shadow-lg"
-        />
-      )}
-    </section>
+    <div
+      className="relative w-full h-96 flex items-center justify-center text-center text-white rounded-xl overflow-hidden shadow-lg"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="bg-black/40 p-6 rounded-xl">
+        <h1 className="text-4xl md:text-5xl font-bold">{title}</h1>
+        <p className="mt-4 text-lg md:text-xl">{subtitle}</p>
+      </div>
+    </div>
   );
 }
