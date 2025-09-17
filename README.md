@@ -50,6 +50,8 @@ npm run dev
 
 5. Open http://localhost:3000 in your browser.
 
+   
+
 Usage
 
 Add Sections: Use the sidebar to add Hero, Features, CTA, or Footer sections.
@@ -66,12 +68,16 @@ Import Layout: Click “Import” and select a JSON file to load a saved layout.
 
 Fullscreen Preview: Click “Preview Fullscreen” to view your page without the sidebar.
 
+
+
 | Section      | Editable Fields                                           |
 | ------------ | --------------------------------------------------------- |
 | **Hero**     | Title, Subtitle, Background Image URL                     |
 | **Features** | Title, List of Features (each with title and description) |
 | **CTA**      | Title, Description, Button Text                           |
 | **Footer**   | Text                                                      |
+
+
 
 Editing Sections
 
@@ -83,6 +89,7 @@ Modify the fields in the modal that appears.
 
 Click Save to update the section or Cancel to discard changes.
 
+
 Export / Import Layout
 
 ---
@@ -92,6 +99,7 @@ Export: Downloads a JSON file containing your current layout.
 Import: Upload a JSON file to restore a saved layout.
 
 Layouts are stored in localStorage, so your changes persist on the same browser.
+
 
 Full-Screen Preview
 
